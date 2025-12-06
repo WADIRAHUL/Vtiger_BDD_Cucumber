@@ -7,11 +7,11 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features = {".\\src\\test\\java\\Features"},
 		glue = {"StepDefinationsAndHooksClasses"},
-		dryRun = false,
-		monochrome = true,
+		dryRun = false, // for true it just checks step-definition mapping. 
+		monochrome = true, // Makes console output clean and readable.
 		tags = "",
 		plugin = {
-				"pretty",
+				"pretty", // Prints steps in readable format in console.
 				"html:VtigerCucumber.html",
 				"json:VtigerCucumber.json"
 		}
